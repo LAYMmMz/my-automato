@@ -1048,7 +1048,7 @@ function AutomatoDashboard({ onLogout }: AutomatoDashboardProps) {
     { id: 'connect', title: "Connect Templates" }
   ], []);
 
-  const apiBase = typeof window !== 'undefined' ? (process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000") : "http://localhost:8000";
+  const apiBase = "https://matchbox-wildlife-dealing.ngrok-free.dev";
 
   // ACTUAL REAL LOCAL DESKTOP SCANNER WITH FALLBACK
   const scanDesktopApps = useCallback(async () => {
